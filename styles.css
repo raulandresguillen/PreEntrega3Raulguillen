@@ -9,8 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(./assets/img/fondos/fondo\ \ abst\ neg\ verd\ ganador);
-  color: #f8f8f8;
+  color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 2vh;
   min-height: 100vh;
@@ -47,11 +46,13 @@ a {
   padding: 5px;
   border-radius: 7px;
 }
+
 .fondo-h3 {
   background-color: rgba(10, 53, 1, 0.63);
   padding: 5px;
   border-radius: 7px;
 }
+
 h3 {
   color: #1efa01;
   text-align: center;
@@ -82,7 +83,7 @@ h3 {
 }
 
 .fondo-titulo {
-  background-color: rgba(6, 31, 1, 0.603);
+  background-color: rgba(1, 31, 3, 0.582);
   padding: 5px;
   border-radius: 7px;
 }
@@ -104,10 +105,6 @@ h3 {
   max-width: 1200px;
   margin: auto;
   padding: 40px 0;
-  /* Flexbox */
-  /* display: flex;
-  gap: 20px; */
-  /* Grid */
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 20px;
@@ -119,13 +116,6 @@ h3 {
 }
 
 .contenedor-noticias {
-  /* Flexbox */
-  /* width: 70%;
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; */
-  /* Grid */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -140,22 +130,15 @@ h3 {
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  /* Flexbox */
-  /* width: calc(33.33% - 20px); */
 }
 
 .card .textos {
   height: 100%;
   color: #fdfdfd;
-  /* Flebox */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* Grid */
-  /* display: grid;
-  grid-template-rows: 1fr auto; */
 }
-
 
 .banner {
   border-radius: 10px;
@@ -163,15 +146,9 @@ h3 {
   padding: 20px;
   background-size: cover;
   background-position: center center;
-  /* Flexbox */
-  /* width: 30%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* Grid */
-  /* display: grid;
-  grid-template-rows: auto auto auto;
-  align-items: center; */
 }
 
 .banner ul {
@@ -184,7 +161,7 @@ h3 {
 }
 
 .banner .boton {
-  background: #1efa0193;
+  background: rgba(30, 250, 1, 0.5764705882);
   display: block;
   width: 100%;
   font-weight: bold;
