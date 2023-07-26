@@ -39,6 +39,16 @@ h3 {
 .text {
   color: #1efa01; }
 
+.hoover-logo {
+  overflow: hidden; }
+
+img-logo {
+  transition: 0.5s;
+  object-fit: cover; }
+
+img:hover {
+  transform: scale(1.2); }
+
 .fondo-todo {
   background-image: url(./assets/img/fondos/fondo-todo.jpg); }
 
