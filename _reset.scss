@@ -47,11 +47,13 @@ h3 {
   .hoover-logo{
     overflow: hidden;
 }
-    img-logo{
-        transition: 0.5s;
-        object-fit: cover;
-    }
     
-    img:hover{
+    .logo:hover{
         transform: scale(1.2);
+    }
+    li{
+      text-decoration: none;
+    }
+    ul{
+      text-decoration: none;
     }

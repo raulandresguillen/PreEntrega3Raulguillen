@@ -42,12 +42,14 @@ h3 {
 .hoover-logo {
   overflow: hidden; }
 
-img-logo {
-  transition: 0.5s;
-  object-fit: cover; }
-
-img:hover {
+.logo:hover {
   transform: scale(1.2); }
+
+li {
+  text-decoration: none; }
+
+ul {
+  text-decoration: none; }
 
 .fondo-todo {
   background-image: url(./assets/img/fondos/fondo-todo.jpg); }
@@ -158,5 +160,27 @@ img:hover {
   border-radius: 100px;
   font-family: "Roboto", sans-serif;
   cursor: pointer; }
+
+.navbar-nav .nav-item .nav-link {
+  color: #00ff00; }
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #fafafa; }
+
+.navbar-toggler {
+  border: var(--bs-border-width) solid #006b05 !important; }
+
+.navbar-toggler-icon {
+  background-color: #00ff0041; }
+
+.hover:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.425);
+  border-radius: 10px; }
+
+.hovergreen:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 255, 0, 0.253);
+  border-radius: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
