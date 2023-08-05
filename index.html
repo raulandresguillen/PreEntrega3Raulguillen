@@ -64,7 +64,7 @@
 <main class="container-fluid">
     <div class="row h-100">
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex flex-column justify-content-center align-items-center">
-        <h1 class="fondo-h1 w-100 text-center">Dolar Tasas en Tiempo Real</h1>
+        <h1 class="fondo-h1 w-100 text-center hovergold">Dolar Tasas en Tiempo Real</h1>
         <!-- <button class="bg-dark hover text fs-6"><a class="text" href="./pages/Loggin.html">Suscribete</a></button>
             <br>
             <div class="container">
@@ -88,10 +88,13 @@
                 </div> -->
                 <div class="container-fluid">
                   <div class="row h-100">
-                    <div class="col-sm-6 col-md-4 col-lg-4"><iframe style="margin: 10px; width:300px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgba(5, 134, 1, 0.384);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-blue" frameborder="0"></iframe></div>
-                    <div class="col-sm-6 col-md-4 col-lg-4"><iframe style="margin: 10px; width:300px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-mep" frameborder="0"></iframe></div>
-                    <div class="col-sm-12 col-md-4 col-lg-4"><iframe style="margin: 10px; width:300px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/bitcoin-usd" frameborder="0"></iframe></div>
-                                    
+                    <div class="col-sm-6 col-md-4 col-lg-4"><iframe style="margin: 10px; width:220px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgba(5, 134, 1, 0.384);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-blue" frameborder="0"></iframe></div>
+                    <div class="col-sm-6 col-md-4 col-lg-4"><iframe style="margin: 10px; width:220px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-mep" frameborder="0"></iframe></div>
+                    <div class="col-sm-6 col-md-4 col-lg-4"><iframe style="margin: 10px; width:220px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/bitcoin-usd" frameborder="0"></iframe></div>
+                    <!-- <div class="col-sm-6 col-md-4 col-lg-4"><iframe style="margin: 10px; width:220px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-contado-con-liquidacion" frameborder="0"></iframe></div>
+                    <div class="col-sm-6 col-md-4 col-lg-4"><iframe style="margin: 10px; width:220px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-bancos-y-casas-de-cambio" frameborder="0"></iframe></div>
+                    <div class="col-sm-6 col-md-4 col-lg-4"><iframe style="margin: 10px; width:220px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/banco-nacion" frameborder="0"></iframe></div>
+           -->
                             
                   </div>
                 </div>
@@ -99,78 +102,70 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 "><h2 class="fondo-h3 text-center">Calculodolar</h2></div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 "><h2 class="fondo-h3 text-center hovergreen">Calculodolar</h2></div>
                     </div>
+
+<!-- calculodolar -->
+
                 <div class="container ">
-                  <div class="calculator">
+                  <div class="calculator row h-100">
                     <input type="text" id="display" disabled>
+                    <br><br><hr>
+
                     <div class="buttons">
                       <button onclick="clearDisplay()">C</button>
                       <button onclick="appendToDisplay('/')">÷</button>
                       <button onclick="appendToDisplay('*')">×</button>
-                      <button onclick="appendToDisplay('7')">7</button>
-                      <button onclick="appendToDisplay('8')">8</button>
-                      <button onclick="appendToDisplay('9')">9</button>
+                      <button onclick="appendToDisplay('569')">$Blue</button>
+                      <button onclick="appendToDisplay('100')">100</button>
+                      <button onclick="appendToDisplay('200')">200</button>
                       <button onclick="appendToDisplay('-')">-</button>
-                      <button onclick="appendToDisplay('4')">4</button>
-                      <button onclick="appendToDisplay('5')">5</button>
-                      <button onclick="appendToDisplay('6')">6</button>
+                      <button onclick="appendToDisplay('570')">$Cripto</button>
+                      <button onclick="appendToDisplay('500')">500</button>
+                      <button onclick="appendToDisplay('1000')">1.000</button>
                       <button onclick="appendToDisplay('+')">+</button>
-                      <button onclick="appendToDisplay('1')">1</button>
-                      <button onclick="appendToDisplay('2')">2</button>
-                      <button onclick="appendToDisplay('3')">3</button>
+                      <button onclick="appendToDisplay('516')">MEP</button>
+                      <button onclick="appendToDisplay('10000')">10.000</button>
+                      <button onclick="appendToDisplay('100000')">100.000</button>
                       <button onclick="calculate()">=</button>
-                      <button onclick="appendToDisplay('0')">0</button>
-                      <!-- <button onclick="appendToDisplay('.')">.</button> -->
+                      <button onclick="appendToDisplay('513')">Solidario</button>
+                      <!-- <button onclick="appendToDisplay('input')">.</button> -->
                     </div>
-                        <!-- <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 fondo-titulo text-center ">Monto</div>
-                        <div class="col-sm-12 col-md-5 col-lg-5 col-xl-6 fondo-titulop text-center ">Top 7 Mejores Inversiones del Mes</div>
-                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 fondo-titulo text-center">Resultado</div>
-                    </div>
-                    <div class="row m-1">
-                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 fondo-titulo text-center"><input type="number">Seleccione moneda</div>
-                        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-6 fondo-titulop text-center">1) Dolar Ahorro 2) Plazo Fijo tradicional 3)Cuenta remunerada 4)leDe Septiembre 5) leDe Agosto 6)arbitraje cripto-mep 7) arbitraje blue-mep.
-                        </div>
-                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 fondo-titulo text-center">$ 1.097</div>
-                    </div>
-                    <div class="row m-1">
-                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 fondo-titulo text-center"><input type="checkbox"> U$D <input type="checkbox"> ARS</div>
-                        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-6 fondo-titulop text-center"></div>
-                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 fondo-titulo text-center">Tipo De Cambio</div>
-                    </div>
-                    <div class="row m-1">
-                      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 fondo-titulo text-center"><button>Calcular</button></div>
-                      <div class="col-sm-5 col-md-5 col-lg-5 col-xl-6 fondo-titulop text-center"></div>
-                      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 fondo-titulo text-center"><input type="checkbox"> seleccione</div> -->
+
+
+<!-- fin calculodolar -->
+
+
+
                   </div>
                     <br><br><br>
                     <div class="container">
-                        <div class="row dolar-precio">
+                        <div class="row h-100 dolar-precio">
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 "><h2 class="fondo-h3 text-center">Posibles Ganancias</h2></div>
                         </div>
-                    <div class="row m-1 dolar-tasa">
+                    <div class="row m-1 dolar-tasa h-100">
                         <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 fondo-titulop text-center">Ganancias Diarias</div>
                         <div class="col-sm-5 col-md-5 col-lg-5 col-xl-6 fondo-titulo text-center">Ganancias por Mes</div>
                         <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 fondo-titulop text-center">Ganancias por Año</div>
                     </div>
-                    <div class="row m-1 dolar-tasa">
+                    <div class="row m-1 dolar-tasa h-100">
                         <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 fondo-titulop text-center">$ 3,23</div>
                         <div class="col-sm-5 col-md-5 col-lg-5 col-xl-6 fondo-titulo text-center">$ 97,2</div>
                         <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 fondo-titulop text-center">$ 1.166,4</div>
                     </div>
                     <br><br><br>
                     <div class="container">
-                        <div class="row dolar-precio">
+                        <div class="row dolar-precio h-100">
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 "><h2 class="fondo-h3 text-center">Estrategias Planificacion y Proyeccion</h2></div>
                         </div>
                         <br><br>
-                        <div class="row dolar-tasa">
+                        <div class="row dolar-tasa h-100">
                             <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-titulop text-center">Estrategia Conservadora</div>
                             <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-titulo text-center">Estrategia Moderada</div>
                             <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-titulop text-center">Estrategia Agresiva</div>
                         </div>
                         <br>
-                        <div class="row dolar-tasa">
+                        <div class="row dolar-tasa h-100">
                             <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-titulop text-center">.</div>
                             <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-titulo text-center">. </div>
                             <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-titulop text-center">. </div>
@@ -197,7 +192,7 @@
         <div><p class="d-flex justify-content-center">© Todos los Derechos Reservados</p></div>
       </div>
       <div class="col-sm-2 col-md-2 col-lg-2 col-xl-4 bg-gradient text-center"><a class="d-flex justify-content-center" href="./index.html"><img class="logo d-flex justify-content-center" src="./assets/img/logo ojo triaungulo.png" alt="" height="100px "></a>
-        <p class="d-flex justify-content-center">www.CalculoDolar.com</p>
+        <p class="d-flex justify-content-center">CalculoDolar</p>
       </div>
       </div>                                
     </div>
