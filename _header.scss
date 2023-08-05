@@ -1,14 +1,23 @@
 .navbar-nav .nav-item .nav-link {
-  color: #00ff00; }
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #CCC5B9; 
+}
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #fafafa; }
+  color: #08fa00; 
+}
 
-
-.navbar-toggler {
-  border: var(--bs-border-width) solid #006b05 !important; }
-
-.navbar-toggler-icon {
-  background-color: #00ff0041; }
-
-
+  .navbar {
+    padding: 10px 0;
+    }
+    
+    .navbar-toggler {
+      background-color: #1a1a1a;
+      border: var(--bs-border-width) solid #50ff40 !important; }
+    
+    .navbar-toggler-icon {
+      width: 1rem !important;
+      height: 1rem !important;
+      vertical-align: inherit;
+      background-color: #1c8801; }

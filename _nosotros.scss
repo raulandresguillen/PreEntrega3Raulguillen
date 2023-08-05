@@ -1,0 +1,49 @@
+body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .cover {
+    padding: 0 2.5rem;
+    margin-top: 70px; }
+  
+  .main-title {
+    font-size: 3rem;
+    padding-bottom: 10px;
+    border-bottom: 2px #60ff40 solid;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  
+  @media (max-width: 767px) {
+    .main-title {
+      font-size: 1.5rem; } }
+  
+  @media (min-width: 768px) {
+    .main-title {
+      font-size: 2.5rem; } }
+  
+  .contact-me form input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    border: 1px solid #FFFCF2;
+    line-height: 1.5rem;
+    padding: 7px 7px;
+    color:  #CCC5B9;
+  }
+  
+  .contact-me form textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 7px;
+    border: 1px solid #FFFCF2;
+    padding: 10px 10px; 
+    color:  #CCC5B9;
+  }
+  
+  .contact-me form button {
+    width: 100%;
+    height: 3rem;
+    background-color: #06b906;
+    color: black;
+    font-weight: 700; }
+  

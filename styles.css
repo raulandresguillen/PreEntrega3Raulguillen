@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-image: url(./assets/img/fondos/fondo-todo.jpg);
-  color: #ffffff;
+  color: #CCC5B9;
   font-family: "Roboto", sans-serif;
   font-size: 2vh;
   min-height: 100vh; }
@@ -55,14 +55,15 @@ img {
   max-width: 100%; }
 
 .hover:hover {
-  transform: scale(1.1);
+  transform: scale(1);
   background-color: rgba(0, 0, 0, 0.425);
   border-radius: 10px; }
 
 .hovergreen:hover {
   transform: scale(1.1);
-  background-color: rgba(0, 255, 0, 0.253);
-  border-radius: 10px; }
+  background-color: rgba(0, 255, 0, 0.123);
+  border-radius: 10px;
+  color: lime; }
 
 .hovergold:hover {
   transform: scale(1.1);
@@ -70,44 +71,53 @@ img {
   border-radius: 10px;
   color: yellow; }
 
+.hoverred:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 0, 0, 0.13);
+  border-radius: 10px;
+  color: #ff7b00; }
+
+.hoverimg:hover {
+  transform: scale(1.5); }
+
 .calculator {
-  background-color: #333;
+  background-color: #222;
   padding: 20px;
   border-radius: 10px;
-  width: 350px;
-  margin: 100px auto;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+  width: 100%;
+  margin: 0 auto; }
 
 #display {
-  width: 100%;
-  height: 40px;
+  background-color: #333;
+  color: yellow;
   font-size: 24px;
-  text-align: right;
+  padding: 10px;
   margin-bottom: 10px;
-  background-color: #444;
-  color: #fffb00;
-  border: none;
-  border-radius: 5px;
-  padding: 5px; }
+  width: 100%; }
 
 .buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px; }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 button {
-  width: 100%;
-  height: 50px;
-  font-size: 20px;
-  background-color: #666;
-  color: #00ff00;
+  background-color: #444;
+  color: #00FF00;
   border: none;
-  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
   cursor: pointer;
-  transition: background-color 0.3s; }
+  margin: 5px;
+  border-radius: 5px;
+  width: calc(25% - 15px); }
 
 button:hover {
-  background-color: #555; }
+  background-color: #1086017e; }
+
+.boton {
+  color: #15ff00;
+  background-color: rgba(0, 128, 0, 0.288);
+  width: 100%; }
 
 .fondo-todo {
   background-image: url(./assets/img/fondos/fondo-todo.jpg); }
@@ -220,16 +230,25 @@ button:hover {
   cursor: pointer; }
 
 .navbar-nav .nav-item .nav-link {
-  color: #00ff00; }
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #CCC5B9; }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #fafafa; }
+  color: #08fa00; }
+
+.navbar {
+  padding: 10px 0; }
 
 .navbar-toggler {
-  border: var(--bs-border-width) solid #006b05 !important; }
+  background-color: #1a1a1a;
+  border: var(--bs-border-width) solid #50ff40 !important; }
 
 .navbar-toggler-icon {
-  background-color: #00ff0041; }
+  width: 1rem !important;
+  height: 1rem !important;
+  vertical-align: inherit;
+  background-color: #1c8801; }
 
 *::after,
 *::before,
@@ -377,5 +396,51 @@ header {
   color: #fff;
   padding: 15px 10px;
   cursor: pointer; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+.cover {
+  padding: 0 2.5rem;
+  margin-top: 70px; }
+
+.main-title {
+  font-size: 3rem;
+  padding-bottom: 10px;
+  border-bottom: 2px #60ff40 solid;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+@media (max-width: 767px) {
+  .main-title {
+    font-size: 1.5rem; } }
+
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 2.5rem; } }
+
+.contact-me form input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  border: 1px solid #FFFCF2;
+  line-height: 1.5rem;
+  padding: 7px 7px;
+  color: #CCC5B9; }
+
+.contact-me form textarea {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 7px;
+  border: 1px solid #FFFCF2;
+  padding: 10px 10px;
+  color: #CCC5B9; }
+
+.contact-me form button {
+  width: 100%;
+  height: 3rem;
+  background-color: #06b906;
+  color: black;
+  font-weight: 700; }
 
 /*# sourceMappingURL=styles.css.map */
