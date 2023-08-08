@@ -37,9 +37,23 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+
+h1{
+  color: #CCC5B9;
+  text-shadow: 1px 1px 5px rgb(251, 255, 2);
+}
+h2 {
+  color: #CCC5B9;
+  text-shadow: 1px 1px 5px rgb(251, 255, 2);
+}
+
 h3 {
     color: #1efa01;
     text-align: center;
+  }
+  h4 {
+    color: yellow;
+    text-shadow: 1px 1px 5px rgb(251, 255, 2);
   }
   .text {
     color: #1efa01;
@@ -66,10 +80,17 @@ h3 {
       border-radius: 10px;
   }
   .hovergreen:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: rgba(0, 255, 0, 0.123);
     border-radius: 10px;
     color: rgb(0, 255, 0);
+    text-shadow: 1px 1px 4px rgb(251, 255, 0);
+  }
+  .hoverwhite:hover{
+    transform: scale(1.1);
+    background-color: rgba(7, 7, 7, 0.863);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
   }
   .hovergold:hover{
       transform: scale(1.1);
@@ -120,7 +141,6 @@ button {
   cursor: pointer;
   margin: 5px;
   border-radius: 5px;
-  width: calc(25% - 15px);
 }
 
 button:hover {
