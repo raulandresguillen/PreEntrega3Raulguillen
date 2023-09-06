@@ -1,5 +1,5 @@
 
-// calculodolarcambio monedas
+// ini calculodolarcambio monedas
 
 function convertir() {
   const montoInput = document.getElementById("monto");
@@ -18,9 +18,9 @@ function convertir() {
   // Por ejemplo, puedes usar tasas de cambio fijas o hacer una llamada a una API de tasas de cambio
 
   // En este ejemplo, asumiremos una tasa de cambio fija para simplificar
-  const tasadecambio = 665; // 1 USD = 1.2 EUR
+  const tasadecambio = 720; // 1 USD = 1.2 EUR
 
-  const convertedMonto = monto * tasadecambio / blue ; //convertedMontomep = monto * tasadecambio / mep ;
+  const convertedMonto = monto * tasadecambio; //convertedMontomep = monto * tasadecambio / mep ;
   // var convertedMontomep = monto * tasadecambio / mep ;
 
   resultadoDisplay.textContent = `${monto} ${selecionemoneda} = ${convertedMonto.toFixed(2)} ${tipodecambio}`;
@@ -29,7 +29,7 @@ function convertir() {
 
 
 
-// calculodolar cambio monedas 
+// fin calculodolar cambio monedas 
 
 
 
