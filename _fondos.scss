@@ -2,6 +2,13 @@
     background-image: url(./assets/img/fondos/fondo-todo.jpg);
   }
   
+  .fondo-claro {
+    background-image: url(./assets/img/fondos/fondoclarobody3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .fondo-nav {
     background-image: url(./assets/img/fondos/fondo-nav.jpg);
     background-position: center;
@@ -52,4 +59,10 @@
     background-color: rgba(10, 53, 1, 0.63);
     padding: 5px;
     border-radius: 7px;
+  }
+  .fondo-resultado {
+    background-image: url(./assets/img/fondos/marco-hecho-de-cuentas-de-dólar-13429220.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }

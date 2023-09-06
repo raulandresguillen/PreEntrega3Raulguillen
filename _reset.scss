@@ -13,7 +13,7 @@
     color: #CCC5B9;
     font-family: "Roboto", sans-serif;
     font-size: 2vh;
-    min-height: 100vh;
+    letter-spacing: 0.5px;
   }
   
   header {
@@ -39,25 +39,42 @@
 }
 
 h1{
+  text-align: center;
   color: #CCC5B9;
   text-shadow: 1px 1px 5px rgb(251, 255, 2);
 }
 h2 {
+  text-align: center;
   color: #CCC5B9;
   text-shadow: 1px 1px 5px rgb(251, 255, 2);
 }
 
 h3 {
+  text-align: center;
     color: #1efa01;
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   h4 {
+    text-align: center;
     color: yellow;
     text-shadow: 1px 1px 5px rgb(251, 255, 2);
   }
   .text {
     color: #1efa01;
   }
+  .text-compra {
+    color: yellow;
+    // text-shadow: 1px 1px 4px rgb(255, 255, 255);
+  }
+
+  .text-titulo-fondoblanco {
+    text-align: center;
+    color: #050505;
+    text-shadow: 1px 1px 5px rgb(2, 255, 36);
+    background-color: #008d0018;
+  }
+
   .hoover-logo{
     overflow: hidden;
 }
@@ -75,22 +92,26 @@ h3 {
       max-width: 100%;
     }
     .hover:hover{
-      transform: scale(1);
-      background-color: rgba(0, 0, 0, 0.425);
+      transform: scale(1.1);
+      background-color: rgba(1, 65, 5, 0.24);
       border-radius: 10px;
   }
   .hovergreen:hover{
     transform: scale(1.05);
-    background-color: rgba(0, 255, 0, 0.123);
+    background-color: rgba(0, 255, 0, 0.082);
     border-radius: 10px;
     color: rgb(0, 255, 0);
     text-shadow: 1px 1px 4px rgb(251, 255, 0);
   }
   .hoverwhite:hover{
     transform: scale(1.1);
-    background-color: rgba(7, 7, 7, 0.863);
+    background-color: rgba(255, 255, 255, 0.116);
     border-radius: 10px;
-    color: rgb(255, 255, 255);
+  }
+  .hoverblack:hover{
+    transform: scale(1.1);
+    background-color: rgba(5, 5, 5, 0);
+    border-radius: 10px;
   }
   .hovergold:hover{
       transform: scale(1.1);
@@ -133,14 +154,16 @@ h3 {
 }
 
 button {
-  background-color: #444;
+  background-color: #1b311c9f;
   color: #00FF00;
   border: none;
-  padding: 15px 30px;
+  padding: 15px;
   font-size: 18px;
   cursor: pointer;
   margin: 5px;
   border-radius: 5px;
+  backdrop-filter: blur(5px);
+  transition: all 300ms;
 }
 
 button:hover {
@@ -150,4 +173,11 @@ button:hover {
   color: rgb(21, 255, 0);
   background-color: rgba(0, 128, 0, 0.288);
   width: 100%;
+}
+
+.blur {
+  background-color: #0052001e;
+  backdrop-filter: blur(5px);
+transition: all 300ms;
+
 }

@@ -7,6 +7,7 @@
     <meta name="keywords" content="dolar, precio dolar, dolar hoy, cuanto esta el dolar, subio el dolar, Dolar, calculodolar, calculadolar, arbitrajes, rulo, rulos, finanzas, argentina, dolar mep, dolar ahorro, dolar cripto, cripto, btc, usdt, dai">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./script.js">
     <link rel="icon" href="./assets/img/logo ojo triaungulo.ico">
     <title>Dolarizarte</title>
@@ -27,8 +28,6 @@
                 </button>
                 <div class="collapse navbar-collapse hoover-logo" id="navbarNav">
                   <ul class="navbar-nav">
-
-
                     <li class="nav-item">
                       <a class="nav-link text text-nav hover" aria-current="page" href="./pages/Loggin.html"><p class="fs-7">Loging</p></a>
                     </li>
@@ -63,7 +62,7 @@
 
 <main class="container-fluid">
 
-<!-- dolatar tasas en tiempo real -->
+<!-- dolatar tasas en tiempo real --------------------------------------->
 
 <div class="container-fluid">
     <div class="row h-100">
@@ -79,6 +78,8 @@
                 <br><br>
 <!-- fin dolar tasas en tiempo real  -->
 
+
+
 <!-- calculodolar -->
 
 
@@ -88,17 +89,84 @@
                     </div>
                     <br><br>
 
+<!-- calculadolar cambio de monedas ini  -->
+
+
 <div class="container-fluid">
+  <div class=" d-flex flex-column row h-100">
+    <label for="monto"><h3 class="text-center">Monto invertir:</h3></label>
+<input class="text-center" type="number" id="monto" step="1">
+
+    <!-- Agrega más opciones de monedas aqui -->
+
+<label class="text-center" for="selecionemoneda">seleccione moneda a invertir:</label>
+<select id="selecionemoneda">
+    <option class="text-center" value="usd">USD</option>
+    <option class="text-center" value="ars">ARS</option>
+    <option class="text-center" value="eur">EUR</option>
+    <option class="text-center" value="usdt">USDT</option>
+</select>
+
+    <!-- Agrega más opciones de monedas fin -->
+
+    <!-- Agregar mas tipos de cmabio aqui -->
+
+<label class="text-center" for="tipodecambio">seleccione tipo de cambio:</label>
+<select id="tipodecambio">
+  <option class="text-center" value="ARS">ARS</option>
+  <option class="text-center" value="MEP">MEP</option>
+  <option class="text-center" value="USDT">CRIPTO</option>
+  <option class="text-center" value="USD">USD</option>
+  <option class="text-center" value="EUR">EUR</option>
+  <option class="text-center" value="AHORRO">Ahorro</option>
+  <option class="text-center" value="Rulo Mep Inv">Rulo Mep</option>
+  <option class="text-center" value="RULO CRIPTO MEP">Rulo cripto Mep</option>
+  <option class="text-center" value="Rulo Ahorro">Rulo Ahorro</option>
+  <option class="text-center" value="Rulo Mep Inv">Rulo Mep Inv</option>
+
+
+
+</select><br><br>
+
+    <!-- Agregar mas tipos de cmabio fin -->
+
+<button onclick="convertir()" class="hovergold">Calcular</button>
+<br>
+
+<h2 class="text-center">Resultado:</h2><br>
+
+<div class="container-fluid">
+  <div class=" d-flex flex-column row h-100 resultado">
+    <div class="text-center text-dark hovergold fs-1 fondo-resultado" id="resultado" ></div>
+  </div>
+</div>
+
+
+<br><br><br><br>
+  </div>
+</div>
+
+<!-- calculadolar cambio de monedas fin  -->
+
+
+
+
+
+
+
+
+
+<!-- <div class="container-fluid">
   <div class="calculator d-flex flex-column row h-100">
     <input type="text" id="display" disabled>
     <br><hr>
     <br>
 
     <div class="buttons">
-      <button onclick="appendToDisplay('*(591)')">Blue</button>
-      <button onclick="appendToDisplay('*(590)')">Cripto</button>
-      <button onclick="appendToDisplay('*(520)')">MEP</button>
-      <button onclick="appendToDisplay('*(516)')">Ahorro</button>
+      <button onclick="appendToDisplay('*(770)')">Blue</button>
+      <button onclick="appendToDisplay('*(722)')">Cripto</button>
+      <button onclick="appendToDisplay('*(652)')">MEP</button>
+      <button onclick="appendToDisplay('*(641)')">Ahorro</button>
 
 
 
@@ -124,6 +192,29 @@
 </div>
 <br><br>
 
+<form id="miFormulario" name="">
+
+<label>numero 1: </label>
+<input type="number" name="" id="valor1" autofocus placeholder="Monto a invertir">
+<button onclick="limpiar();">Limpiar</button>
+<br><br>
+<label>Numero 2: </label>
+<input type="number" name="" id="valor2" placeholder="escribe otro numero">
+<br><br>
+<button type="button" onclick="sumar();">sumar</button>
+<button type="button" onclick="restar();">Restar</button>
+<button type="button" onclick="multiplicar();">Multiplicar</button>
+<button type="button" onclick="dividir();">dividir</button>
+<br><br>
+
+<p class="">El Resultado es: <span id="el-resultado"></span></p>
+
+
+</form>
+
+<br><br><br> -->
+
+
 <!-- fin calculodolar  -->
 
 <!-- ini posibles ganancias -->
@@ -133,9 +224,20 @@
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 "><h2 class="fondo-h3 text-center hovergreen">Posibles Ganancias</h2></div>
                         </div><br>
 
-                        <div class="row h-100 dolar-precio">
+
+
+
+<!-- area img top 7-------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                      <div class="row h-100 dolar-precio">
                           <div class="d-flex justify-content-center col-sm-12 col-md-12 col-lg-12 col-xl-12"><img class="hovergreen" src="./assets/img/actualizacion diaria/top 7.jpeg" alt="" width="700px"></div>
                       </div><br><br>
+
+<!-- area img top 7-------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
 
                     <div class="row m-1 dolar-tasa h-100 ">
                         <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 hovergreen text-center fs-6 fondo-tienda">Ganancias Diarias</div>
@@ -143,9 +245,9 @@
                         <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 hovergreen text-center fs-6 fondo-tienda">Ganancias por Año</div>
                     </div>
                     <div class="row m-1 dolar-tasa h-100">
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 hovergold text-center fs-5 fondo-titulo text">$ 4,09</div>
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 hovergold text-center fs-5 fondo-titulo text">$ 122,78</div>
-                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 hovergold text-center fs-5 fondo-titulo text">$ 1.473</div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 hovergold text-center fs-5 fondo-titulo text">$ 4,38</div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 hovergold text-center fs-5 fondo-titulo text">$ 131,42</div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 hovergold text-center fs-5 fondo-titulo text">$ 1.577,04</div>
                     </div>
                     <br><br>
                     <div class="container">
@@ -159,13 +261,27 @@
                             <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-tienda text-center hoverred">Estrategia Agresiva</div>
                         </div>
                         <br>
+
+
+
+
+
+
+                        <!-- area de img estrategia ----------------------------------------------------------------------------------------->
+
                         <div class="row dolar-tasa h-100">
-                          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-titulo text-center"><div class="d-flex justify-content-center"><img class="hoverimg" src="./assets/img/actualizacion diaria/conservadora  2023-08-05 at 17.19.21.jpeg" alt=""></div></div>
-                          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-titulo text-center"><div class="d-flex justify-content-center"><img class="hoverimg" src="./assets/img/actualizacion diaria/moderada 2023-08-05 at 17.19.21 (1).jpeg" alt=""></div></div>
-                          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-titulo text-center"><div class="d-flex justify-content-center"><img class="hoverimg" src="./assets/img/actualizacion diaria/agresiva 2023-08-05 at 17.19.21 (2).jpeg" alt=""></div></div>
+                          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-titulo text-center"><div class="d-flex justify-content-center"><img class="hoverimg" src="./assets/img/actualizacion diaria/conservadora.jpeg" alt=""></div></div>
+                          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-titulo text-center"><div class="d-flex justify-content-center"><img class="hoverimg" src="./assets/img/actualizacion diaria/moderada.jpeg" alt=""></div></div>
+                          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 fondo-titulo text-center"><div class="d-flex justify-content-center"><img class="hoverimg" src="./assets/img/actualizacion diaria/agresiva.jpeg" alt=""></div></div>
                       </div>
                   </div>
             <br><br>
+                        <!-- area de img estrategia ----------------------------------------------------------------------------------------->
+
+
+
+
+
 
   </main>
 
