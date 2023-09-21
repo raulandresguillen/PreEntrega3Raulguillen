@@ -225,6 +225,9 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.fondofelipe {
+  background-image: url(./assets/img/fondos/fondoblancobody2.jpg); }
+
 .contenedor {
   width: 90%;
   max-width: 1200px;
@@ -519,7 +522,7 @@ body {
   justify-content: center; }
 
 .cards {
-  width: 280px;
+  width: 250px;
   margin: 10px;
   padding: 20px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
@@ -579,8 +582,44 @@ body {
   transition: all 300ms; }
 
 .cards-calculadolar {
-  width: 580px;
+  width: 500px;
   margin: 20px;
+  padding: 50px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.342);
+  border-top: 1px solid rgba(255, 255, 255, 0.342);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 300ms; }
+
+.cards-ancho {
+  width: 650px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.342);
+  border-top: 1px solid rgba(255, 255, 255, 0.342);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 300ms; }
+
+.cards-cover {
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.342);
+  border-top: 1px solid rgba(255, 255, 255, 0.342);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 300ms; }
+
+.cardss {
+  width: 100px;
+  margin: 10px;
   padding: 20px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
